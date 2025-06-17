@@ -12,13 +12,15 @@ String _$apiNotifierHash() => r'185e93c17888cce2a51eb9187229452d0cea25ff';
 @ProviderFor(ApiNotifier)
 final apiNotifierProvider =
     AutoDisposeNotifierProvider<ApiNotifier, Api>.internal(
-  ApiNotifier.new,
-  name: r'apiNotifierProvider',
-  debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$apiNotifierHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+      ApiNotifier.new,
+      name: r'apiNotifierProvider',
+      debugGetCreateSourceHash:
+          const bool.fromEnvironment('dart.vm.product')
+              ? null
+              : _$apiNotifierHash,
+      dependencies: null,
+      allTransitiveDependencies: null,
+    );
 
 typedef _$ApiNotifier = AutoDisposeNotifier<Api>;
 // ignore_for_file: type=lint

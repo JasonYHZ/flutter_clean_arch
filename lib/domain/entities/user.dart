@@ -5,8 +5,8 @@ part 'user.freezed.dart';
 part 'user.g.dart';
 
 @unfreezed
-class User with _$User {
-  factory User({
+abstract class User with _$User {
+   factory User({
     required int id,
     required String name,
     required String email,

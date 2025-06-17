@@ -23,6 +23,10 @@ class AppRouter extends RootStackRouter {
         ),
         AutoRoute(path: '/login', page: LoginRoute.page),
         AutoRoute(
+            path:'/deepLink/:id',
+            page: DeepLinkRoute.page,
+            usesPathAsKey: true),
+        AutoRoute(
             path: '/authorized',
             page: AuthorizedRoute.page,
             guards: [AuthGuard()]),

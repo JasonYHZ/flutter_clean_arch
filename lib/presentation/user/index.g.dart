@@ -13,9 +13,10 @@ String _$getUserInfoCaseHash() => r'd6839d34e395ef7fdddda9245aa294dd97535238';
 final getUserInfoCaseProvider = AutoDisposeFutureProvider<User>.internal(
   getUserInfoCase,
   name: r'getUserInfoCaseProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$getUserInfoCaseHash,
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$getUserInfoCaseHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );

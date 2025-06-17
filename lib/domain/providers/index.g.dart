@@ -12,18 +12,20 @@ String _$userRepositoryNotifierHash() =>
 /// See also [UserRepositoryNotifier].
 @ProviderFor(UserRepositoryNotifier)
 final userRepositoryNotifierProvider = AutoDisposeNotifierProvider<
-    UserRepositoryNotifier, UserRepository>.internal(
+  UserRepositoryNotifier,
+  UserRepository
+>.internal(
   UserRepositoryNotifier.new,
   name: r'userRepositoryNotifierProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$userRepositoryNotifierHash,
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$userRepositoryNotifierHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
 typedef _$UserRepositoryNotifier = AutoDisposeNotifier<UserRepository>;
-
 String _$userUseCaseNotifierHash() =>
     r'a5f39efb06cae24088909e03e104570fa2594e24';
 
@@ -31,14 +33,15 @@ String _$userUseCaseNotifierHash() =>
 @ProviderFor(UserUseCaseNotifier)
 final userUseCaseNotifierProvider =
     AutoDisposeNotifierProvider<UserUseCaseNotifier, UserCase>.internal(
-  UserUseCaseNotifier.new,
-  name: r'userUseCaseNotifierProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$userUseCaseNotifierHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+      UserUseCaseNotifier.new,
+      name: r'userUseCaseNotifierProvider',
+      debugGetCreateSourceHash:
+          const bool.fromEnvironment('dart.vm.product')
+              ? null
+              : _$userUseCaseNotifierHash,
+      dependencies: null,
+      allTransitiveDependencies: null,
+    );
 
 typedef _$UserUseCaseNotifier = AutoDisposeNotifier<UserCase>;
 // ignore_for_file: type=lint

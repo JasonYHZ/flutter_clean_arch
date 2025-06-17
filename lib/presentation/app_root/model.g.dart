@@ -12,12 +12,15 @@ String _$appRootStateNotificationHash() =>
 /// See also [AppRootStateNotification].
 @ProviderFor(AppRootStateNotification)
 final appRootStateNotificationProvider = AutoDisposeNotifierProvider<
-    AppRootStateNotification, AppRootState>.internal(
+  AppRootStateNotification,
+  AppRootState
+>.internal(
   AppRootStateNotification.new,
   name: r'appRootStateNotificationProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$appRootStateNotificationHash,
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$appRootStateNotificationHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );

@@ -51,5 +51,17 @@
     <array>
         <string>_dartobservatory._tcp</string>
     </array>
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>finger</string>
+          <string>com</string>
+        </array>
+      </dict>
+    </array>
 </dict>
 </plist>
